@@ -13,15 +13,19 @@ public class ConcorsoFotografico {
     
     int[] fotoVotiGiudici = new int[5];
 
-    
-
 
 
     // stampare quali foto sono state premiate, se con voto >= a 8 (con operatore %)
-
-
-
-
+    int fotoNumeroPremiate = 0;
+         
+    for (int i = 0; i < 5; i++) {
+      if (((fotoVotiGiudici[i] % 2) == 0) && (fotoVotiGiudici[i] > 8)) {
+        System.out.println("voto foto " + i + ": " + fotoVotiGiudici[i]);
+        
+        fotoNumeroPremiate++;
+      }
+    }
+      
 
     // stampare numero totale foto premiate
 
