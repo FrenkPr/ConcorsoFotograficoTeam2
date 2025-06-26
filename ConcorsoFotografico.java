@@ -8,10 +8,12 @@ public class ConcorsoFotografico {
   public static void main(String[] args) {
     // memorizza voti da 1 a 10 assegnati a 5 foto
     // usa un ciclo for per inserire i voti uno alla volta
-    
+
     Scanner scannerNum = new Scanner(System.in);
     
-    int[][] fotoVotiGiudici = new int[5][5];
+    int[] fotoVotiGiudici = new int[5];
+
+    
 
 
 
