@@ -14,7 +14,7 @@ public class ConcorsoFotografico
         System.out.println("Programma di inserimento di 5 foto da votare");
 
         //inserimento voti delle foto
-        for (int i = 0; i < fotoVotiGiudici.length; i++)
+        for (int i = 0; i < fotoVotiGiudici.length; i++) 
         {
             //input voto
             System.out.println("Inserire un voto da 1 a 10");
@@ -27,7 +27,7 @@ public class ConcorsoFotografico
                 System.out.println("Errore: inserire un voto compreso tra 1 e 10");
                 fotoVotiGiudici[i] = scannerNum.nextInt();
             }
-        }
+        } 
 
         for (int i = 0; i < fotoVotiGiudici.length; i++)
         {
@@ -35,14 +35,15 @@ public class ConcorsoFotografico
             if (((fotoVotiGiudici[i] % 2) == 0) && (fotoVotiGiudici[i] >= 8))
             {
                 //stampa a schermo il voto della foto premiata
-                System.out.println("Foto n." + i + " premiata con il voto: " + fotoVotiGiudici[i]);
+                System.out.println("Foto n." + (i + 1) + " premiata con il voto: " + fotoVotiGiudici[i]);
 
                 //conteggio delle foto premiate
                 numFotoPremiate++;
             }
+            
         }
-
         // stampare numero totale foto premiate
+        System.out.println("Il numero totale delle foto premiate è: " + numFotoPremiate);  
 
         // stampare concorso annullato se nessuna foto riceve almeno 6 punti
 
