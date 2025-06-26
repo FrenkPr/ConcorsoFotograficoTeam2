@@ -11,7 +11,7 @@ public class ConcorsoFotografico {
 
     Scanner scannerNum = new Scanner(System.in);
     
-    int[][] fotoVotiGiudici = new int[5][5];
+    int[] fotoVotiGiudici = new int[5];
 
     
 
